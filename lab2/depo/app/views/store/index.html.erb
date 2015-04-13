@@ -3,7 +3,11 @@
 <% end %>
 
 <h1>Your Pragmatic Catalog</h1>
-
+<% if session[:counter] < 5 %>
+<%= pluralize session[:counter], 'time' %>
+<%else %>
+<%='add to cart please'%>
+<%end%>
 <% @products.each do |product| %>
 <div class="entry">
 	<%= image_tag(product.image_url) %>
