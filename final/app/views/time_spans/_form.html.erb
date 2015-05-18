@@ -1,0 +1,35 @@
+<%= form_for(@time_span) do |f| %>
+
+
+  <% if @time_span.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@time_span.errors.count, "error") %> prohibited this time_span from being saved:</h2>
+
+      <ul>
+      <% @time_span.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+
+  <div class="field">
+    <%= f.label :start %><br>
+    <%= f.datetime_select :start %>
+  </div>
+  <div class="field">
+    <%= f.label :end %><br>
+    <%= f.datetime_select :end %>
+	<!--button id = 'now' type = button onclick ="now">now</button-->
+  </div>
+  <div class="field">
+    <%= f.label :task_id %><br>
+    <%= f.text_field :task_id, :value => params[:format]%> <!-- WOOHOO this is how i do it :D -->
+	
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<!--%= params[:format] %-->
+<% end %>

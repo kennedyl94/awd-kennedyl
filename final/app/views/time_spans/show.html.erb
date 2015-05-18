@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Start:</strong>
+  <%= @time_span.start %>
+</p>
+
+<p>
+  <strong>End:</strong>
+  <%= @time_span.end %>
+</p>
+
+<p>
+  <strong>Task:</strong>
+  <%= @time_span.task %>
+</p>
+
+<%= link_to 'Edit', edit_time_span_path(@time_span) %> |
+<%= link_to 'Back', time_spans_path %>

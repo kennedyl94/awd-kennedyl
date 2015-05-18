@@ -1,0 +1,50 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+tr
+{
+	text-align: center;
+	
+	
+}
+td
+{
+	font-size: 150%;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+}
+._0
+{
+	color: #cc22cc;
+	background-color: #00ff22;
+	
+	
+}
+._1
+{
+	color: #dddddd;
+	background-color: #7f5f9f;
+	
+}
+/* unvisited link */
+a:link {
+    color: #000000;
+}
+
+/* visited link */
+a:visited {
+    color: #000000;
+}
+
+/* mouse over link */
+a:hover {
+    color: #ffffff;
+}
+
+/* selected link */
+a:active {
+    color: #000000;
+	
+}
